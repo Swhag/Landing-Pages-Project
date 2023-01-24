@@ -14,17 +14,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 a:link {
   text-decoration: none;
 }
 
 a:visited {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* ------------------------------------------- */
@@ -111,18 +110,26 @@ a:visited {
   border-radius: 5px;
 }
 
+.main-hero button:hover {
+  background-color: #eee;
+}
+
+.main-hero button:active {
+  background-color: #cccccc;
+}
+
 /* ------------------------------------------- */
 /* floating box styling */
 /* ------------------------------------------- */
 
 .main-box {
-  width: 60%;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 90%;
 
-  height: 220px;
+  height: 230px;
   background-color: #eee;
   font-size: 1rem;
-  padding: 20px;
+  padding: 50px;
 
   display: flex;
   flex-direction: column;
@@ -210,12 +217,20 @@ a:visited {
 
 .contact-form button {
   border: none;
-  background-color: #ffb300;
+  background-color: #e09200;
   color: #fff;
   width: 200px;
 
   padding: 10px;
   border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #ffb300;
+}
+
+.contact-form button:active {
+  background-color: #c68400;
 }
 
 .button-group {
@@ -244,7 +259,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 100px;
 }
 
 .main-banner-container div {
@@ -253,6 +268,11 @@ a:visited {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.main-banner-container i {
+  font-size: 2rem;
+  color: #373737;
 }
 
 /* ------------------------------------------- */
