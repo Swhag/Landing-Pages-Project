@@ -32,7 +32,7 @@ button {
   margin: 0 auto;
   position: relative;
   max-width: 100vw;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 /* ------------------------------------------- */
@@ -54,18 +54,29 @@ button {
   font-size: 2rem;
 }
 
+.navbar .nav-logo:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 .navbar .nav-items {
   font-size: 1.2rem;
   display: flex;
   gap: 20px;
 }
 
-.navbar div:hover {
+.navbar .nav-items div {
+  padding: 6px 0px;
+}
+
+.navbar .nav-items div:hover {
+  border-bottom: 1px solid #fff;
   cursor: pointer;
 }
 
 /* ------------------------------------------- */
-/* hero styling */ /* ------------------------------------------- */
+/* hero styling */
+/* ------------------------------------------- */
 
 .main-hero {
   width: 100%;
@@ -73,7 +84,7 @@ button {
   padding: 0px 20px;
   padding-bottom: 80px;
 
-  background-image: url(./img/image1.jpg);
+  background-image: url(./img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +95,26 @@ button {
   align-items: center;
   gap: 60px;
 
+  position: relative;
   text-align: center;
+}
+
+.main-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.main-title,
+.main-hero-content,
+.main-hero button,
+.main-box {
+  z-index: 10;
 }
 
 .main-title {
@@ -245,6 +275,7 @@ button {
 .main-banner {
   width: 100%;
   min-height: 200px;
+  margin-bottom: 10px;
 
   display: flex;
   justify-content: center;
@@ -271,8 +302,74 @@ button {
 }
 
 .main-banner-container i {
+  background-color: #373737;
+  color: #fff;
+
+  width: 80px;
+  height: 80px;
   font-size: 2rem;
-  color: #373737;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------- */
+/* main-gallery styling */
+/* ------------------------------------------- */
+.main-gallery {
+  background-color: #eee;
+  padding: 50px 30px;
+}
+
+.main-gallery-container {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-item {
+  width: 33%;
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+}
+
+.item-overlay {
+  content: '';
+  top: 0;
+  left: 100%;
+  position: absolute;
+
+  width: 0%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0);
+  transition: all 350ms ease-in-out;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
+
+.gallery-item:hover .item-overlay {
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.main-gallery-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* ------------------------------------------- */
@@ -306,6 +403,12 @@ button {
     border-bottom: 1px solid #ccc;
     width: 100%;
     padding: 20px;
+  }
+
+  .main-banner-container i {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
   }
 }
 
