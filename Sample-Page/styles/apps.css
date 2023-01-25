@@ -1,0 +1,58 @@
+/* ------------------------------------------- */
+/* hero styling */
+/* ------------------------------------------- */
+
+.apps-hero {
+  width: 100%;
+  height: 600px;
+
+  background-image: linear-gradient(to bottom, #499add, #4e61c0);
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.apps-hero-content {
+  color: #fff;
+  width: 40%;
+  padding: 80px 0px;
+}
+
+.apps-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.apps-hero-content p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.apps-hero button {
+  border: none;
+  background-color: #fff;
+
+  padding: 14px 20px;
+  color: #000;
+  border-radius: 5px;
+}
+
+.apps-hero button:hover {
+  background-color: #eee;
+}
+
+.apps-hero button:active {
+  background-color: #cccccc;
+}
+
+.apps-hero .img-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.apps-hero img {
+  width: 400px;
+}
