@@ -361,7 +361,7 @@ button {
   height: 100%;
   margin-left: 100%;
 
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
   transition: all 350ms ease-in-out;
 
   display: flex;

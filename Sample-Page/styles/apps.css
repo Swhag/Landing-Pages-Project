@@ -71,9 +71,20 @@
 
 @media (max-width: 992px) {
   .apps-hero {
-    height: 500px;
+    height: 100%;
     padding: 0px 0px 0px 16px;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apps-hero-content {
+    color: #fff;
+    width: 100%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .apps-hero img {
@@ -115,13 +126,14 @@
   padding: 60px 30px 50px 30px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .service-banner-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -167,9 +179,19 @@
 }
 
 @media (max-width: 992px) {
+  .service-banner {
+    padding: 40px 30px 40px 30px;
+  }
+
   .service-banner-items {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .service-banner-items i {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
   }
 }
 
@@ -180,23 +202,85 @@
 .apps-gallery {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0px;
+  padding: 40px 100px;
+  gap: 40px;
+}
+
+.apps-gallery-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .apps-gallery-container {
   width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.apps-gallery div {
+.apps-gallery .column {
+  flex: 1;
+}
+
+.apps-gallery-item {
+  position: relative;
+  transition: all 350ms ease-in-out;
+  overflow: hidden;
+}
+
+.apps-gallery-item h1 {
+  font-size: 2rem;
+}
+
+.apps-item-overlay {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+
   width: 100%;
+  height: 100%;
+  padding: 100px 50px;
+
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  color: #fff;
+}
+
+.apps-gallery-item:hover .apps-item-overlay {
+  border: 30px solid #fff;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
 .apps-gallery img {
+  width: 100%;
   display: block;
+}
+
+@media (max-width: 992px) {
+  .apps-gallery {
+    padding: 60px 0;
+  }
+
+  .apps-gallery-container {
+    flex-direction: column;
+  }
+
+  .apps-gallery-item:hover .apps-item-overlay {
+    border: 16px solid #fff;
+  }
 }
