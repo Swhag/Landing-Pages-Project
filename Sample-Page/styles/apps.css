@@ -1,10 +1,22 @@
+:root {
+  --gray: #424242;
+}
+
+.apps-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 100vw;
+  margin-bottom: 150px;
+}
+
 /* ------------------------------------------- */
 /* hero styling */
 /* ------------------------------------------- */
 
 .apps-hero {
   width: 100%;
-  height: 600px;
+  height: 550px;
+  padding: 0px 16px;
 
   background-image: linear-gradient(to bottom, #499add, #4e61c0);
 
@@ -31,10 +43,10 @@
 
 .apps-hero button {
   border: none;
-  background-color: #fff;
+  background-color: var(--gray);
+  color: #fff;
 
-  padding: 14px 20px;
-  color: #000;
+  padding: 12px 20px;
   border-radius: 5px;
 }
 
@@ -55,4 +67,108 @@
 
 .apps-hero img {
   width: 400px;
+}
+
+@media (max-width: 992px) {
+  .apps-hero {
+    height: 500px;
+    padding: 0px 0px 0px 16px;
+    justify-content: space-between;
+  }
+
+  .apps-hero img {
+    width: 260px;
+  }
+}
+
+/* ------------------------------------------- */
+/* white banner styling */
+/* ------------------------------------------- */
+
+.white-banner {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.white-banner button {
+  background-color: var(--gray);
+  color: #fff;
+  border: none;
+
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------- */
+/* service banner styling */
+/* ------------------------------------------- */
+
+.service-banner {
+  background-color: #4e61c0;
+  color: #fff;
+  width: 100%;
+  padding: 60px 30px 50px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.service-banner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-banner-header h1 {
+  font-size: 1.6rem;
+}
+
+.service-banner-items {
+  display: flex;
+  gap: 80px;
+}
+
+.service-banner-items i {
+  background-color: #fff;
+  color: #4e61c0;
+
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-banner-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .service-banner-items {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
