@@ -172,3 +172,31 @@
     gap: 30px;
   }
 }
+
+/* ------------------------------------------- */
+/* apps gallery styling */
+/* ------------------------------------------- */
+
+.apps-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.apps-gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.apps-gallery div {
+  width: 100%;
+}
+
+.apps-gallery img {
+  display: block;
+}
