@@ -232,7 +232,7 @@
 
 .apps-gallery-item {
   position: relative;
-  transition: all 350ms ease-in-out;
+  transition: transition-timing-function 350ms ease-in-out;
   overflow: hidden;
 }
 

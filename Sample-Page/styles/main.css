@@ -343,7 +343,7 @@ button {
   max-width: 500px;
   height: 100%;
   position: relative;
-  transition: all 350ms ease-in-out;
+  transition: transition-timing-function 350ms ease-in-out;
   overflow: hidden;
 }
 
@@ -393,10 +393,6 @@ button {
     gap: 60px;
   }
 
-  /* ------------------------------------------- */
-  /* main-gallery styling */
-  /* ------------------------------------------- */
-
   .main-gallery {
     padding: 40px 10px;
   }
@@ -411,6 +407,12 @@ button {
   .gallery-item {
     width: 30%;
     height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-gallery-container {
+    height: 270px;
   }
 }
 
@@ -440,10 +442,6 @@ button {
     height: 50px;
     font-size: 1.25rem;
   }
-
-  /* ------------------------------------------- */
-  /* main-gallery styling */
-  /* ------------------------------------------- */
 
   .main-gallery {
     padding: 20px 20px;
