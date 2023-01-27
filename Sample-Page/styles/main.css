@@ -343,12 +343,7 @@ button {
   max-width: 500px;
   height: 100%;
   position: relative;
-  transition: transition-timing-function 350ms ease-in-out;
   overflow: hidden;
-}
-
-.gallery-item:hover {
-  opacity: 0.9;
 }
 
 .item-overlay {
