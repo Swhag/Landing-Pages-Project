@@ -232,8 +232,8 @@
 
 .apps-gallery-item {
   position: relative;
-  transition: transition-timing-function 350ms ease-in-out;
   overflow: hidden;
+  transition: all 300ms ease-in-out;
 }
 
 .apps-gallery-item h1 {
@@ -246,24 +246,27 @@
   left: 0;
   position: absolute;
 
+  color: #fff;
   width: 100%;
   height: 100%;
   padding: 100px 50px;
-
-  background: rgba(0, 0, 0, 0.1);
-  transition: all 300ms ease-in-out;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  color: #fff;
+
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+}
+
+.apps-gallery-item:hover {
+  transform: scale(0.9);
 }
 
 .apps-gallery-item:hover .apps-item-overlay {
-  border: 30px solid #fff;
-  background: rgba(0, 0, 0, 0.4);
   color: #fff;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .apps-gallery img {
