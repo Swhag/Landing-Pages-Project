@@ -48,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .profile-info h2 {
@@ -69,10 +69,12 @@ body {
 
   padding: 8px 20px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .profile-location {
   display: flex;
+  align-items: center;
   gap: 10px;
   color: var(--primary-color);
 }
@@ -171,7 +173,7 @@ body {
 
   .profile-info {
     text-align: center;
-    gap: 10px;
+    gap: 2px;
   }
 
   .top-banner-right {
@@ -183,7 +185,7 @@ body {
 
 @media (max-width: 768px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
 
   .profile-container {
@@ -215,12 +217,18 @@ body {
 }
 
 .profile-content {
-  border: 1px solid blue;
   width: 100%;
   height: 600px;
   margin-top: 16px;
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .profile-content {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 /* ------------------------------------------- */
@@ -245,6 +253,16 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 1024px) {
+  .profile-left {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------- */
+/* profile mid styling */
+/* ------------------------------------------- */
+
 .profile-mid {
   background-color: #fff;
   width: 60%;
@@ -252,10 +270,6 @@ body {
   border-radius: 10px;
   box-shadow: 5px 6px 6px 0 hsl(0 0% 0% / 0.03);
 }
-
-/* ------------------------------------------- */
-/* profile mid styling */
-/* ------------------------------------------- */
 
 .profile-mid-bottom,
 .profile-mid-top {
@@ -296,8 +310,14 @@ body {
   border-radius: 25px;
 }
 
+@media (max-width: 1024px) {
+  .profile-mid {
+    width: 100%;
+  }
+}
+
 /* ------------------------------------------- */
-/* profile top styling */
+/* profile right styling */
 /* ------------------------------------------- */
 
 .profile-right {
@@ -353,7 +373,7 @@ body {
   border-bottom: 1px solid var(--secondary-color);
   padding-bottom: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .profile-right-bottom img {
@@ -388,6 +408,14 @@ body {
 
 .people-location {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 6px;
   color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .profile-right {
+    width: 100%;
+    height: 100%;
+  }
 }
