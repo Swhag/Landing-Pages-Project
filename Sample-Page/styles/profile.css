@@ -1,12 +1,13 @@
 :root {
-  --primary-color: #41579b;
-  --secondary-color: #bdbdbd;
+  --primary: #41579b;
+  --primary-light: #4961b7;
+  --primary-dark: #002f6c;
+  --secondary: #bdbdbd;
 }
 
 body {
   background-color: #f7f9fc;
   width: 100vw;
-  height: 100vh;
 }
 
 .profile-container {
@@ -18,6 +19,30 @@ body {
 @media (min-width: 2560px) {
   .profile-container {
     padding: 60px 440px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .profile-container {
+    padding: 50px 200px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .profile-container {
+    padding: 40px 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile-container {
+    padding: 30px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 30px;
   }
 }
 
@@ -63,7 +88,7 @@ body {
 }
 
 .profile-info button {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border: none;
   color: #fff;
 
@@ -72,11 +97,19 @@ body {
   margin-top: 10px;
 }
 
+.profile-info button:hover {
+  background-color: var(--primary-light);
+}
+
+.profile-info button:active {
+  background-color: var(--primary-dark);
+}
+
 .profile-location {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .profile-location {
@@ -84,7 +117,7 @@ body {
 }
 
 .top-banner-right {
-  border-left: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary);
   max-width: 500px;
   height: 100%;
   padding: 30px;
@@ -107,7 +140,7 @@ body {
 }
 
 .info-left-list i {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: #fff;
 
   width: 30px;
@@ -131,23 +164,7 @@ body {
   font-size: 0.9rem;
 }
 
-@media (max-width: 1700px) {
-  .profile-container {
-    padding: 50px 200px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .profile-container {
-    padding: 40px 140px;
-  }
-}
-
 @media (max-width: 1024px) {
-  .profile-container {
-    padding: 30px 100px;
-  }
-
   .profile-top-banner {
     height: 380px;
     padding: 0px;
@@ -183,30 +200,20 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 90%;
-  }
-
-  .profile-container {
-    padding: 30px;
-  }
-}
-
 /* ------------------------------------------- */
 /* profile content styling */
 /* ------------------------------------------- */
 
 .profile-tab {
-  color: var(--primary-color);
-  border-bottom: 1px solid var(--secondary-color);
+  color: var(--primary);
+  border-bottom: 1px solid var(--secondary);
   margin: 10px 25px 10px 25px;
   height: 50px;
   position: relative;
 }
 
 .profile-tab h5 {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary);
   font-size: 1.05rem;
   width: 80px;
   padding: 8px;
@@ -285,7 +292,7 @@ body {
 }
 
 .profile-mid-top {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary);
 }
 
 .profile-mid-top p {
@@ -303,7 +310,7 @@ body {
 }
 
 .skill-tags button {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary);
   background-color: #fff;
 
   padding: 6px 12px;
@@ -342,7 +349,7 @@ body {
 }
 
 .profile-right-top i {
-  color: var(--primary-color);
+  color: var(--primary);
   font-size: 5rem;
 }
 
@@ -353,24 +360,34 @@ body {
 
 .profile-right-top button {
   border: none;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: #fff;
   padding: 8px 20px;
   border-radius: 5px;
 }
 
-.profile-right-top p {
-  color: var(--primary-color);
+.profile-right-top button:hover {
+  background-color: var(--primary-light);
+}
+
+.profile-right-top button:active {
+  background-color: var(--primary-dark);
+}
+
+.profile-right-top a {
+  color: var(--primary);
 }
 
 .profile-right-bottom {
   width: 100%;
   height: 50%;
-  padding: 10px;
+  padding-top: 10px;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .profile-right-bottom h4 {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary);
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -410,7 +427,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 @media (max-width: 1024px) {

@@ -47,7 +47,6 @@ button {
 
 .navbar {
   background: rgba(0, 0, 0, 1);
-  /* background-color: rgba(0, 47, 108, 0.9); */
 
   color: #fff;
   height: 80px;
@@ -84,6 +83,11 @@ button {
 .navbar .nav-items a:hover {
   border-bottom: 1px solid #fff;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar .nav-items {
+    padding-top: 10px;
+  }
 }
 
 /* ------------------------------------------- */
