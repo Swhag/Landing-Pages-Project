@@ -85,8 +85,25 @@ button {
   cursor: pointer;
 }
 @media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .nav-logo {
+    display: none;
+  }
+
   .navbar .nav-items {
     padding-top: 10px;
+    font-size: 1.2rem;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
   }
 }
 
